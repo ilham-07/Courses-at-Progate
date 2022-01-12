@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-nav">
+        <a href="/">BLOG</a>
+        <ul>
+          <li><a href="/list">Artikel</a></li>
+        </ul>
+      </div>
+      <p>Ken Belajar Blog</p>
+    </header>
+    <main>
+      <ul class="list">
+          <!-- Periksa proses dari menampilkan artikel-artikel -->
+        <% articles.forEach((article) => { %>
+          <li>
+            <h2><%= article.title %></h2>
+            <p><%= article.summary %></p>
+            <!-- Periksa bagaimana merincikan tautan ke halaman Detail Artikel -->
+            <a href="/article/<%= article.id %>">Baca selengkapnya</a>
+          </li>
+        <% }) %>
+      </ul>
+    </main>
+  </body>
+</html>

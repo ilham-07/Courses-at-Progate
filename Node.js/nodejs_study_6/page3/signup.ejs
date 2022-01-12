@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <div class="sign">
+      <div class="container">
+        <h1><a href="/list">BLOG</a></h1>
+        <div class="panel">
+          <h2>Pendaftaran</h2>
+          <!-- Menyebutkan URL tujuan untuk mengirimkan formulir dan method dalam tag <form> -->
+          <form action="/signup" method="post">
+            <!-- Tambahkan attribute `name` pada tag-tag <input> dari username, email, dan password -->
+            <p>Nama Pengguna</p>
+            <input type="text" name="username">
+            <p>Email</p>
+            <input type="text" name="email">
+            <p>Kata Sandi</p>
+            <input type="password" name="password">
+            <input type="submit" value="Daftar">
+            <a href="/list">Kembali ke artikel</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

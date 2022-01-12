@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <%- include('header'); %>
+    <main>
+      <div class="article">
+        <!-- Tuliskan code untuk ketika article.category bernilai `all` -->
+        <% if (article.category === 'all') { %>
+          <h1><%= article.title %></h1>
+          <p><%= article.content %></p>
+        <% } %>
+        <!-- Tuliskan code untuk ketika article.category bernilai `limited` -->
+        <% if (article.category === 'limited') { %>
+          <i>KHUSUS ANGGOTA</i>
+          <h1><%= article.title %></h1>
+          <p><%= article.content %></p>
+        <% } %>
+        <!-- Hapus code di bawah -->
+        <!-- Hapus code di atas -->
+      </div>
+    </main>
+    <footer>
+      <a class="btn sub" href="/list">Kembali ke Artikel</a>
+    </footer>
+  </body>
+</html>

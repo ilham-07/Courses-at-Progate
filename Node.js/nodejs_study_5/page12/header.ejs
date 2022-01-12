@@ -1,0 +1,17 @@
+<header>
+  <div class="header-nav">
+    <a href="/">BLOG</a>
+    <p>Selamat datang, <%= locals.username %></p>
+    <ul>
+      <li><a href="/list">Artikel</a></li>
+      <!-- Toggle tautan agar ditampilkan menggunakan locals.isLoggedIn -->
+       <% if (locals.isLoggedIn) { %>
+      
+        <li><a href="/logout">Log out</a></li>
+      <% } else { %> 
+        <li><a href="/login">Log in</a></li>
+      <% }  %>
+    </ul>
+  </div>
+  <p>Ken Belajar Blog</p>
+</header>
