@@ -1,5 +1,5 @@
 # Courses-at-Progate
-Results of 2 months programming language course at Progate
+Results of 2 months programming language course by Progate
 
 # Progate
 
